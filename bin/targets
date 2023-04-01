@@ -1,0 +1,3 @@
+#!/bin/sh
+find -L data/ -name '*.sra' \
+	| sed -e 's#data#results#' -e 's#.sra$#.fastq#'
